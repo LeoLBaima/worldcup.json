@@ -1,0 +1,46 @@
+name: Update World Cup Scores
+
+# GitHub Actions minimum cron interval is 5 minutes — anything shorter is ignored.
+# The free tier of football-data.org allows 10 calls/min; the script makes 1-3 per run.
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch: # allow manual trigger from the Actions tab
+
+# Cancel any in-progress run so two instances never write the JSON at the same time.
+concurrency:
+  group: update-scores
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Use the default GITHUB_TOKEN — it has push access to the same repo.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch and update scores
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+        run: python 2026/update_scores.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet 2026/worldcup.json; then
+            git add 2026/worldcup.json
+            git commit -m "scores: auto-update results [skip ci]"
+            git push
+          fi
