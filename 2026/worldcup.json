@@ -30,6 +30,23 @@
          "time":"20:00 UTC-6",
          "team1":"South Korea",
          "team2":"Czech Republic",
+         "score": {"ft": [2, 1], "ht": [0, 1]},
+         "goals1":[
+            {
+               "name":"Hwang In-beom",
+               "minute":67
+            },
+            {
+               "name":"Oh Hyeon-gyu",
+               "minute":80
+            }
+         ],
+         "goals2":[
+            {
+               "name":"Ladislav Krejčí",
+               "minute":59
+            }
+         ],
          "group":"Group A",
          "ground":"Guadalajara (Zapopan)"
       },
