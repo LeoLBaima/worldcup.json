@@ -4,7 +4,7 @@ name: Update World Cup Scores
 # The free tier of football-data.org allows 10 calls/min; the script makes 1-3 per run.
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/15 * * * *'
   workflow_dispatch: # allow manual trigger from the Actions tab
 
 # Cancel any in-progress run so two instances never write the JSON at the same time.

@@ -15,6 +15,7 @@ import os
 import sys
 import time
 import argparse
+from datetime import date as Date, timedelta
 from pathlib import Path
 import urllib.request
 import urllib.error
@@ -29,10 +30,13 @@ TEAM_NAME_MAP = {
     "United States": "USA",
     "Korea Republic": "South Korea",
     "Bosnia and Herzegovina": "Bosnia & Herzegovina",
+    "Bosnia-Herzegovina": "Bosnia & Herzegovina",
+    "Czechia": "Czech Republic",
     "Côte d'Ivoire": "Ivory Coast",
     "Cote d'Ivoire": "Ivory Coast",
     "Cape Verde": "Cape Verde",
     "Cabo Verde": "Cape Verde",
+    "Cape Verde Islands": "Cape Verde",
     "Congo DR": "DR Congo",
     "Democratic Republic of the Congo": "DR Congo",
     "Iran": "Iran",
@@ -147,17 +151,19 @@ def main():
         home = normalize_name(api_match.get("homeTeam", {}).get("name", ""))
         away = normalize_name(api_match.get("awayTeam", {}).get("name", ""))
 
-        key = (date, home, away)
-        idx = index.get(key)
+        # worldcup.json stores local dates; API returns UTC — late-evening US games
+        # can fall on the next UTC day, so also try date-1.
+        prev_date = (Date.fromisoformat(date) - timedelta(days=1)).isoformat()
+        idx = (
+            index.get((date, home, away))
+            or index.get((date, away, home))
+            or index.get((prev_date, home, away))
+            or index.get((prev_date, away, home))
+        )
         if idx is None:
-            # Also try swapped (some fixtures may list differently)
-            idx = index.get((date, away, home))
-        if idx is None:
-            # Check if match already has a score (was manually entered or previously updated)
+            # Silently skip matches that are already scored in worldcup.json
             already_scored = any(
-                m.get("date") == date
-                and {m.get("team1"), m.get("team2")} == {home, away}
-                and "score" in m
+                {m.get("team1"), m.get("team2")} == {home, away} and "score" in m
                 for m in matches
             )
             if not already_scored:
