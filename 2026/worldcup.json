@@ -249,7 +249,16 @@
      3,
      0
     ]
-   }
+   },
+    "goals1": [
+     {"name": "Damián Bobadilla", "minute": "7", "owngoal": true},
+     {"name": "Folarin Balogun", "minute": "31"},
+    {"name": "Folarin Balogun", "minute": "45+5"},
+    {"name": "Giovanni Reyna", "minute": "90+8"}
+   ],
+   "goals2": [
+    {"name": "Maurício", "minute": "73"}
+   ]
   },
   {
    "round": "Matchday 3",

@@ -95,7 +95,7 @@ def map_goals(api_goals: list[dict], team_name: str) -> list[dict]:
     return result
 
 
-def update_match(entry: dict, api_match: dict, detail: dict) -> bool:
+def update_match(entry: dict, api_match: dict, detail: dict, teams_swapped: bool = False) -> bool:
     """Apply API data to a worldcup.json match entry. Returns True if changed."""
     score = api_match.get("score", {})
     ft = score.get("fullTime", {})
@@ -109,16 +109,21 @@ def update_match(entry: dict, api_match: dict, detail: dict) -> bool:
     if ft_home is None or ft_away is None:
         return False
 
+    # When API home team = JSON team2, flip scores so team1 score is always first
+    if teams_swapped:
+        ft_home, ft_away = ft_away, ft_home
+        if ht_home is not None and ht_away is not None:
+            ht_home, ht_away = ht_away, ht_home
+
     entry["score"] = {"ft": [ft_home, ft_away]}
     if ht_home is not None and ht_away is not None:
         entry["score"]["ht"] = [ht_home, ht_away]
 
+    t1 = entry["team1"]
+    t2 = entry["team2"]
     api_goals = detail.get("goals", [])
-    if api_goals:
-        t1 = entry["team1"]
-        t2 = entry["team2"]
-        entry["goals1"] = map_goals(api_goals, t1)
-        entry["goals2"] = map_goals(api_goals, t2)
+    entry["goals1"] = map_goals(api_goals, t1)
+    entry["goals2"] = map_goals(api_goals, t2)
 
     return True
 
@@ -154,12 +159,18 @@ def main():
         # worldcup.json stores local dates; API returns UTC — late-evening US games
         # can fall on the next UTC day, so also try date-1.
         prev_date = (Date.fromisoformat(date) - timedelta(days=1)).isoformat()
-        idx = (
-            index.get((date, home, away))
-            or index.get((date, away, home))
-            or index.get((prev_date, home, away))
-            or index.get((prev_date, away, home))
-        )
+        teams_swapped = False
+        idx = index.get((date, home, away))
+        if idx is None:
+            idx = index.get((date, away, home))
+            if idx is not None:
+                teams_swapped = True
+        if idx is None:
+            idx = index.get((prev_date, home, away))
+        if idx is None:
+            idx = index.get((prev_date, away, home))
+            if idx is not None:
+                teams_swapped = True
         if idx is None:
             # Silently skip matches that are already scored in worldcup.json
             already_scored = any(
@@ -181,7 +192,7 @@ def main():
             print(f"    Warning: could not fetch detail for match {match_id}: {e}")
             detail = {}
 
-        changed = update_match(matches[idx], api_match, detail)
+        changed = update_match(matches[idx], api_match, detail, teams_swapped)
         if changed:
             updated += 1
         else:
