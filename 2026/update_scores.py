@@ -151,6 +151,17 @@ def main():
         idx = index.get(key)
         if idx is None:
             # Also try swapped (some fixtures may list differently)
+            idx = index.get((date, away, home))
+        if idx is None:
+            # Check if match already has a score (was manually entered or previously updated)
+            already_scored = any(
+                m.get("date") == date
+                and {m.get("team1"), m.get("team2")} == {home, away}
+                and "score" in m
+                for m in matches
+            )
+            if not already_scored:
+                print(f"  Skipped (not found in worldcup.json): {home} vs {away} ({date})")
             continue
 
         print(f"  Updating: {home} vs {away} ({date})")
@@ -167,6 +178,8 @@ def main():
         changed = update_match(matches[idx], api_match, detail)
         if changed:
             updated += 1
+        else:
+            print(f"    Warning: score not available yet for match {match_id}")
 
     if updated == 0:
         print("Nothing to update.")
