@@ -140,7 +140,19 @@
    "team1": "Qatar",
    "team2": "Switzerland",
    "group": "Group B",
-   "ground": "San Francisco Bay Area (Santa Clara)"
+   "ground": "San Francisco Bay Area (Santa Clara)",
+   "score": {
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 8",
@@ -250,14 +262,30 @@
      0
     ]
    },
-    "goals1": [
-     {"name": "Damián Bobadilla", "minute": "7", "owngoal": true},
-     {"name": "Folarin Balogun", "minute": "31"},
-    {"name": "Folarin Balogun", "minute": "45+5"},
-    {"name": "Giovanni Reyna", "minute": "90+8"}
+   "goals1": [
+    {
+     "name": "Damián Bobadilla",
+     "minute": "7",
+     "owngoal": true
+    },
+    {
+     "name": "Folarin Balogun",
+     "minute": "31"
+    },
+    {
+     "name": "Folarin Balogun",
+     "minute": "45+5"
+    },
+    {
+     "name": "Giovanni Reyna",
+     "minute": "90+8"
+    }
    ],
    "goals2": [
-    {"name": "Maurício", "minute": "73"}
+    {
+     "name": "Maurício",
+     "minute": "73"
+    }
    ]
   },
   {
