@@ -376,7 +376,19 @@
    "team1": "Germany",
    "team2": "Curaçao",
    "group": "Group E",
-   "ground": "Houston"
+   "ground": "Houston",
+   "score": {
+    "ft": [
+     7,
+     1
+    ],
+    "ht": [
+     3,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 4",
