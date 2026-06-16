@@ -140,7 +140,19 @@
    "team1": "Qatar",
    "team2": "Switzerland",
    "group": "Group B",
-   "ground": "San Francisco Bay Area (Santa Clara)"
+   "ground": "San Francisco Bay Area (Santa Clara)",
+   "score": {
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 8",
@@ -185,7 +197,19 @@
    "team1": "Brazil",
    "team2": "Morocco",
    "group": "Group C",
-   "ground": "New York/New Jersey (East Rutherford)"
+   "ground": "New York/New Jersey (East Rutherford)",
+   "score": {
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     1,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 3",
@@ -194,7 +218,19 @@
    "team1": "Haiti",
    "team2": "Scotland",
    "group": "Group C",
-   "ground": "Boston (Foxborough)"
+   "ground": "Boston (Foxborough)",
+   "score": {
+    "ft": [
+     0,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 9",
@@ -250,14 +286,30 @@
      0
     ]
    },
-    "goals1": [
-     {"name": "Damián Bobadilla", "minute": "7", "owngoal": true},
-     {"name": "Folarin Balogun", "minute": "31"},
-    {"name": "Folarin Balogun", "minute": "45+5"},
-    {"name": "Giovanni Reyna", "minute": "90+8"}
+   "goals1": [
+    {
+     "name": "Damián Bobadilla",
+     "minute": "7",
+     "owngoal": true
+    },
+    {
+     "name": "Folarin Balogun",
+     "minute": "31"
+    },
+    {
+     "name": "Folarin Balogun",
+     "minute": "45+5"
+    },
+    {
+     "name": "Giovanni Reyna",
+     "minute": "90+8"
+    }
    ],
    "goals2": [
-    {"name": "Maurício", "minute": "73"}
+    {
+     "name": "Maurício",
+     "minute": "73"
+    }
    ]
   },
   {
@@ -267,7 +319,19 @@
    "team1": "Australia",
    "team2": "Turkey",
    "group": "Group D",
-   "ground": "Vancouver"
+   "ground": "Vancouver",
+   "score": {
+    "ft": [
+     2,
+     0
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 9",
@@ -312,7 +376,19 @@
    "team1": "Germany",
    "team2": "Curaçao",
    "group": "Group E",
-   "ground": "Houston"
+   "ground": "Houston",
+   "score": {
+    "ft": [
+     7,
+     1
+    ],
+    "ht": [
+     3,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 4",
@@ -321,7 +397,19 @@
    "team1": "Ivory Coast",
    "team2": "Ecuador",
    "group": "Group E",
-   "ground": "Philadelphia"
+   "ground": "Philadelphia",
+   "score": {
+    "ft": [
+     1,
+     0
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 10",
@@ -366,7 +454,19 @@
    "team1": "Netherlands",
    "team2": "Japan",
    "group": "Group F",
-   "ground": "Dallas (Arlington)"
+   "ground": "Dallas (Arlington)",
+   "score": {
+    "ft": [
+     2,
+     2
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 4",
@@ -375,7 +475,19 @@
    "team1": "Sweden",
    "team2": "Tunisia",
    "group": "Group F",
-   "ground": "Monterrey (Guadalupe)"
+   "ground": "Monterrey (Guadalupe)",
+   "score": {
+    "ft": [
+     5,
+     1
+    ],
+    "ht": [
+     2,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 10",
@@ -420,7 +532,19 @@
    "team1": "Belgium",
    "team2": "Egypt",
    "group": "Group G",
-   "ground": "Seattle"
+   "ground": "Seattle",
+   "score": {
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 5",
@@ -429,7 +553,19 @@
    "team1": "Iran",
    "team2": "New Zealand",
    "group": "Group G",
-   "ground": "Los Angeles (Inglewood)"
+   "ground": "Los Angeles (Inglewood)",
+   "score": {
+    "ft": [
+     2,
+     2
+    ],
+    "ht": [
+     1,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 11",
@@ -474,7 +610,19 @@
    "team1": "Spain",
    "team2": "Cape Verde",
    "group": "Group H",
-   "ground": "Atlanta"
+   "ground": "Atlanta",
+   "score": {
+    "ft": [
+     0,
+     0
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 5",
@@ -483,7 +631,19 @@
    "team1": "Saudi Arabia",
    "team2": "Uruguay",
    "group": "Group H",
-   "ground": "Miami (Miami Gardens)"
+   "ground": "Miami (Miami Gardens)",
+   "score": {
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 11",
@@ -528,7 +688,19 @@
    "team1": "France",
    "team2": "Senegal",
    "group": "Group I",
-   "ground": "New York/New Jersey (East Rutherford)"
+   "ground": "New York/New Jersey (East Rutherford)",
+   "score": {
+    "ft": [
+     3,
+     1
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 6",
