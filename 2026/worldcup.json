@@ -553,7 +553,19 @@
    "team1": "Iran",
    "team2": "New Zealand",
    "group": "Group G",
-   "ground": "Los Angeles (Inglewood)"
+   "ground": "Los Angeles (Inglewood)",
+   "score": {
+    "ft": [
+     2,
+     2
+    ],
+    "ht": [
+     1,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 11",
