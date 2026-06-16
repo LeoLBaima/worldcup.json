@@ -4,7 +4,7 @@ name: Update World Cup Scores
 # The free tier of football-data.org allows 10 calls/min; the script makes 1-3 per run.
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '*/45 * * * *'
   workflow_dispatch: # allow manual trigger from the Actions tab
 
 # Cancel any in-progress run so two instances never write the JSON at the same time.
@@ -24,16 +24,44 @@ jobs:
         with:
           # Use the default GITHUB_TOKEN — it has push access to the same repo.
           token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: Fetch and update scores
+      - name: Fetch and update scores (with retries)
         env:
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
-        run: python 2026/update_scores.py
+        run: |
+          set -euo pipefail
+          tries=0
+          max_tries=3
+          until [ "$tries" -ge "$max_tries" ]; do
+            echo "Run attempt: $((tries+1))/$max_tries"
+            if python 2026/update_scores.py; then
+              echo "Update script succeeded"
+              break
+            fi
+            tries=$((tries+1))
+            echo "Update script failed, retrying in 5s..."
+            sleep 5
+          done
+          if [ "$tries" -ge "$max_tries" ]; then
+            echo "Update script failed after $max_tries attempts"
+            exit 1
+          fi
+
+      - name: Show git status and diff (if any)
+        run: |
+          git status --porcelain
+          if ! git diff --quiet 2026/worldcup.json; then
+            echo "--- DIFF START ---"
+            git --no-pager diff 2026/worldcup.json || true
+            echo "--- DIFF END ---"
+          fi
 
       - name: Commit and push if changed
         run: |
@@ -43,4 +71,6 @@ jobs:
             git add 2026/worldcup.json
             git commit -m "scores: auto-update results [skip ci]"
             git push
+          else
+            echo "No changes to commit"
           fi
