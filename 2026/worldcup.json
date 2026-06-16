@@ -619,7 +619,19 @@
    "team1": "Saudi Arabia",
    "team2": "Uruguay",
    "group": "Group H",
-   "ground": "Miami (Miami Gardens)"
+   "ground": "Miami (Miami Gardens)",
+   "score": {
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 11",
