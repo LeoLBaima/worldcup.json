@@ -709,7 +709,19 @@
    "team1": "Iraq",
    "team2": "Norway",
    "group": "Group I",
-   "ground": "Boston (Foxborough)"
+   "ground": "Boston (Foxborough)",
+   "score": {
+    "ft": [
+     1,
+     4
+    ],
+    "ht": [
+     1,
+     2
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 12",
