@@ -910,7 +910,19 @@
    "team1": "England",
    "team2": "Croatia",
    "group": "Group L",
-   "ground": "Dallas (Arlington)"
+   "ground": "Dallas (Arlington)",
+   "score": {
+    "ft": [
+     4,
+     2
+    ],
+    "ht": [
+     2,
+     2
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 7",
