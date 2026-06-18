@@ -73,7 +73,19 @@
    "team1": "Czech Republic",
    "team2": "South Africa",
    "group": "Group A",
-   "ground": "Atlanta"
+   "ground": "Atlanta",
+   "score": {
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 8",
