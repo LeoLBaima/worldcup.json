@@ -173,7 +173,19 @@
    "team1": "Switzerland",
    "team2": "Bosnia & Herzegovina",
    "group": "Group B",
-   "ground": "Los Angeles (Inglewood)"
+   "ground": "Los Angeles (Inglewood)",
+   "score": {
+    "ft": [
+     4,
+     1
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 8",
