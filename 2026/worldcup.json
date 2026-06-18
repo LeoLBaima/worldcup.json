@@ -931,7 +931,19 @@
    "team1": "Ghana",
    "team2": "Panama",
    "group": "Group L",
-   "ground": "Toronto"
+   "ground": "Toronto",
+   "score": {
+    "ft": [
+     1,
+     0
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 13",
