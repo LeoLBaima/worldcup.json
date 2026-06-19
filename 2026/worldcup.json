@@ -388,7 +388,19 @@
    "team1": "USA",
    "team2": "Australia",
    "group": "Group D",
-   "ground": "Seattle"
+   "ground": "Seattle",
+   "score": {
+    "ft": [
+     2,
+     0
+    ],
+    "ht": [
+     2,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 9",
