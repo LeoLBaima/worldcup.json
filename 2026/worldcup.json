@@ -94,7 +94,19 @@
    "team1": "Mexico",
    "team2": "South Korea",
    "group": "Group A",
-   "ground": "Guadalajara (Zapopan)"
+   "ground": "Guadalajara (Zapopan)",
+   "score": {
+    "ft": [
+     1,
+     0
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 14",
