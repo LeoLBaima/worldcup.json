@@ -194,7 +194,19 @@
    "team1": "Canada",
    "team2": "Qatar",
    "group": "Group B",
-   "ground": "Vancouver"
+   "ground": "Vancouver",
+   "score": {
+    "ft": [
+     6,
+     0
+    ],
+    "ht": [
+     3,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 14",
