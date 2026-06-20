@@ -287,7 +287,19 @@
    "team1": "Scotland",
    "team2": "Morocco",
    "group": "Group C",
-   "ground": "Boston (Foxborough)"
+   "ground": "Boston (Foxborough)",
+   "score": {
+    "ft": [
+     0,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 9",
@@ -296,7 +308,19 @@
    "team1": "Brazil",
    "team2": "Haiti",
    "group": "Group C",
-   "ground": "Philadelphia"
+   "ground": "Philadelphia",
+   "score": {
+    "ft": [
+     3,
+     0
+    ],
+    "ht": [
+     3,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 14",
