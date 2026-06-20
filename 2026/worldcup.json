@@ -592,7 +592,19 @@
    "team1": "Netherlands",
    "team2": "Sweden",
    "group": "Group F",
-   "ground": "Houston"
+   "ground": "Houston",
+   "score": {
+    "ft": [
+     5,
+     1
+    ],
+    "ht": [
+     2,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 10",
