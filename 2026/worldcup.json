@@ -514,7 +514,19 @@
    "team1": "Germany",
    "team2": "Ivory Coast",
    "group": "Group E",
-   "ground": "Toronto"
+   "ground": "Toronto",
+   "score": {
+    "ft": [
+     2,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 10",
