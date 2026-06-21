@@ -796,7 +796,19 @@
    "team1": "Spain",
    "team2": "Saudi Arabia",
    "group": "Group H",
-   "ground": "Atlanta"
+   "ground": "Atlanta",
+   "score": {
+    "ft": [
+     5,
+     0
+    ],
+    "ht": [
+     3,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 11",
