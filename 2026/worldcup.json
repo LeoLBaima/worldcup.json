@@ -637,7 +637,19 @@
    "team1": "Tunisia",
    "team2": "Japan",
    "group": "Group F",
-   "ground": "Monterrey (Guadalupe)"
+   "ground": "Monterrey (Guadalupe)",
+   "score": {
+    "ft": [
+     0,
+     4
+    ],
+    "ht": [
+     0,
+     2
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 15",
