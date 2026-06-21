@@ -718,7 +718,19 @@
    "team1": "Belgium",
    "team2": "Iran",
    "group": "Group G",
-   "ground": "Los Angeles (Inglewood)"
+   "ground": "Los Angeles (Inglewood)",
+   "score": {
+    "ft": [
+     0,
+     0
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 11",
