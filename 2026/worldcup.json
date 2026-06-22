@@ -739,7 +739,19 @@
    "team1": "New Zealand",
    "team2": "Egypt",
    "group": "Group G",
-   "ground": "Vancouver"
+   "ground": "Vancouver",
+   "score": {
+    "ft": [
+     1,
+     3
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 16",
@@ -829,7 +841,19 @@
    "team1": "Uruguay",
    "team2": "Cape Verde",
    "group": "Group H",
-   "ground": "Miami (Miami Gardens)"
+   "ground": "Miami (Miami Gardens)",
+   "score": {
+    "ft": [
+     2,
+     2
+    ],
+    "ht": [
+     2,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 16",
