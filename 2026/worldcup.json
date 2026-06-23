@@ -1216,7 +1216,19 @@
    "team1": "England",
    "team2": "Ghana",
    "group": "Group L",
-   "ground": "Boston (Foxborough)"
+   "ground": "Boston (Foxborough)",
+   "score": {
+    "ft": [
+     0,
+     0
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 13",
