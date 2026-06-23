@@ -1126,7 +1126,19 @@
    "team1": "Portugal",
    "team2": "Uzbekistan",
    "group": "Group K",
-   "ground": "Houston"
+   "ground": "Houston",
+   "score": {
+    "ft": [
+     5,
+     0
+    ],
+    "ht": [
+     3,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 13",
