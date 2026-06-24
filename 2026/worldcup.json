@@ -1237,7 +1237,19 @@
    "team1": "Panama",
    "team2": "Croatia",
    "group": "Group L",
-   "ground": "Toronto"
+   "ground": "Toronto",
+   "score": {
+    "ft": [
+     0,
+     1
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 17",
