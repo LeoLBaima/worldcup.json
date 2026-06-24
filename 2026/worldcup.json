@@ -227,7 +227,19 @@
    "team1": "Switzerland",
    "team2": "Canada",
    "group": "Group B",
-   "ground": "Vancouver"
+   "ground": "Vancouver",
+   "score": {
+    "ft": [
+     2,
+     1
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 14",
@@ -236,7 +248,19 @@
    "team1": "Bosnia & Herzegovina",
    "team2": "Qatar",
    "group": "Group B",
-   "ground": "Seattle"
+   "ground": "Seattle",
+   "score": {
+    "ft": [
+     3,
+     1
+    ],
+    "ht": [
+     2,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 3",
