@@ -628,7 +628,19 @@
    "team1": "Curaçao",
    "team2": "Ivory Coast",
    "group": "Group E",
-   "ground": "Philadelphia"
+   "ground": "Philadelphia",
+   "score": {
+    "ft": [
+     0,
+     2
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 15",
@@ -637,7 +649,19 @@
    "team1": "Ecuador",
    "team2": "Germany",
    "group": "Group E",
-   "ground": "New York/New Jersey (East Rutherford)"
+   "ground": "New York/New Jersey (East Rutherford)",
+   "score": {
+    "ft": [
+     2,
+     1
+    ],
+    "ht": [
+     1,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 4",
