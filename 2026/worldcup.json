@@ -362,7 +362,19 @@
    "team1": "Morocco",
    "team2": "Haiti",
    "group": "Group C",
-   "ground": "Atlanta"
+   "ground": "Atlanta",
+   "score": {
+    "ft": [
+     4,
+     2
+    ],
+    "ht": [
+     2,
+     2
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 2",
