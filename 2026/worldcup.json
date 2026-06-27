@@ -1006,7 +1006,19 @@
    "team1": "Cape Verde",
    "team2": "Saudi Arabia",
    "group": "Group H",
-   "ground": "Houston"
+   "ground": "Houston",
+   "score": {
+    "ft": [
+     0,
+     0
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 16",
@@ -1015,7 +1027,19 @@
    "team1": "Uruguay",
    "team2": "Spain",
    "group": "Group H",
-   "ground": "Guadalajara (Zapopan)"
+   "ground": "Guadalajara (Zapopan)",
+   "score": {
+    "ft": [
+     0,
+     1
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 6",
