@@ -904,7 +904,19 @@
    "team1": "Egypt",
    "team2": "Iran",
    "group": "Group G",
-   "ground": "Seattle"
+   "ground": "Seattle",
+   "score": {
+    "ft": [
+     1,
+     1
+    ],
+    "ht": [
+     1,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 16",
@@ -913,7 +925,19 @@
    "team1": "New Zealand",
    "team2": "Belgium",
    "group": "Group G",
-   "ground": "Vancouver"
+   "ground": "Vancouver",
+   "score": {
+    "ft": [
+     1,
+     5
+    ],
+    "ht": [
+     0,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 5",
