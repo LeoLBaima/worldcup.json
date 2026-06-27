@@ -1486,7 +1486,19 @@
    "team1": "Panama",
    "team2": "England",
    "group": "Group L",
-   "ground": "New York/New Jersey (East Rutherford)"
+   "ground": "New York/New Jersey (East Rutherford)",
+   "score": {
+    "ft": [
+     0,
+     2
+    ],
+    "ht": [
+     0,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 17",
@@ -1495,7 +1507,19 @@
    "team1": "Croatia",
    "team2": "Ghana",
    "group": "Group L",
-   "ground": "Philadelphia"
+   "ground": "Philadelphia",
+   "score": {
+    "ft": [
+     2,
+     1
+    ],
+    "ht": [
+     1,
+     0
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Round of 32",
