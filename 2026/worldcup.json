@@ -1282,7 +1282,19 @@
    "team1": "Algeria",
    "team2": "Austria",
    "group": "Group J",
-   "ground": "Kansas City"
+   "ground": "Kansas City",
+   "score": {
+    "ft": [
+     3,
+     3
+    ],
+    "ht": [
+     1,
+     1
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 17",
@@ -1291,7 +1303,19 @@
    "team1": "Jordan",
    "team2": "Argentina",
    "group": "Group J",
-   "ground": "Dallas (Arlington)"
+   "ground": "Dallas (Arlington)",
+   "score": {
+    "ft": [
+     1,
+     3
+    ],
+    "ht": [
+     0,
+     2
+    ]
+   },
+   "goals1": [],
+   "goals2": []
   },
   {
    "round": "Matchday 7",
